@@ -13,18 +13,25 @@ header {
   padding: 20px;
   text-align: center;
   border-bottom: 3px solid #cb3be7;
+  transition: all 0.3s ease-in-out;
 }
 
+header:hover {
+  box-shadow: 0 0 12px #cb3be7;
+}
+
+/* Nav links */
 nav a {
   color: #fff;
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
 nav a:hover {
   color: #cb3be7;
+  text-shadow: 0 0 8px #cb3be7, 0 0 16px #cb3be7;
 }
 
 /* Section styling */
@@ -33,7 +40,7 @@ main {
 }
 
 section {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease;
   background-color: #2e2e3e;
   padding: 20px;
   border-radius: 10px;
@@ -43,10 +50,9 @@ section {
 }
 
 section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 0 15px #cb3be7, 0 0 25px #cb3be7;
 }
-
 
 /* Footer fixed and styled */
 footer {
@@ -57,51 +63,5 @@ footer {
   width: 100%;
   bottom: 0;
   border-top: 2px solid #cb3be7;
-}
-
-@media (max-width: 600px) {
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  header img {
-    height: 140px;
-  }
-
-  main {
-    padding: 20px;
-  }
-
-  section {
-    padding: 15px;
-  }
-  
-}
-
-/* Smooth transitions for hover effects */
-a, section, header, footer {
   transition: all 0.3s ease-in-out;
-}
-
-/* Glow effect on hover for nav links */
-nav a:hover {
-  color: #cb3be7;
-  text-shadow: 0 0 8px #cb3be7, 0 0 16px #cb3be7;
-}
-
-/* Glow on section hover */
-section:hover {
-  box-shadow: 0 0 15px #cb3be7, 0 0 25px #cb3be7;
-  transform: scale(1.01);
-}
-
-/* Optional: Glow header on hover */
-header:hover {
-  box-shadow: 0 0 12px #cb3be7;
-}
-
-/* Optional: Glow footer on hover */
-footer:hover {
-  box-shadow: 0 0 10px #cb3be7;
 }
