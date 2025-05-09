@@ -1,0 +1,79 @@
+/* Add a background gradient */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #111, #111);
+  color: #cb3be7;
+}
+
+/* Header styling */
+header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #cb3be7;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #cb3be7;
+}
+
+/* Section styling */
+main {
+  padding: 40px;
+}
+
+section {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #2e2e3e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Footer fixed and styled */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-top: 2px solid #cb3be7;
+}
+
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  header img {
+    height: 140px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  section {
+    padding: 15px;
+  }
+}
