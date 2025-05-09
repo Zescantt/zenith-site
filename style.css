@@ -76,4 +76,32 @@ footer {
   section {
     padding: 15px;
   }
+  
+}
+
+/* Smooth transitions for hover effects */
+a, section, header, footer {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Glow effect on hover for nav links */
+nav a:hover {
+  color: #cb3be7;
+  text-shadow: 0 0 8px #cb3be7, 0 0 16px #cb3be7;
+}
+
+/* Glow on section hover */
+section:hover {
+  box-shadow: 0 0 15px #cb3be7, 0 0 25px #cb3be7;
+  transform: scale(1.01);
+}
+
+/* Optional: Glow header on hover */
+header:hover {
+  box-shadow: 0 0 12px #cb3be7;
+}
+
+/* Optional: Glow footer on hover */
+footer:hover {
+  box-shadow: 0 0 10px #cb3be7;
 }
