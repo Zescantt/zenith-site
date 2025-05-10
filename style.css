@@ -65,3 +65,34 @@ footer {
   border-top: 2px solid #cb3be7;
   transition: all 0.3s ease-in-out;
 }
+
+/* Download button styling */
+.download-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.download-button a {
+  display: inline-block;
+  background-color: #cb3be7;
+  color: #111;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px #cb3be7;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.download-button a:hover {
+  background-color: #a927c2;
+  box-shadow: 0 0 20px #cb3be7, 0 0 40px #cb3be7;
+  transform: scale(1.05);
+}
+
+.download-button small {
+  display: block;
+  margin-top: 6px;
+  color: #aaa;
+  font-size: 0.85em;
+}
